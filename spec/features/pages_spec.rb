@@ -36,7 +36,7 @@ describe 'navigate' do
     end
 
     it 'has the correct image and is displaying' do
-      expect(page.find('#about-image')['src']).to have_content '/assets/about.jpg'
+      expect(page.find('#about-image')['src']).to have_content('/assets/about.jpg')
       visit page.find('#about-image')['src']
       expect(page.status_code).to eq(200) 
     end
